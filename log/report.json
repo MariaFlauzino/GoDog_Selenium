@@ -1,0 +1,150 @@
+[
+    {
+        "uri": "features\\login.feature",
+        "id": "login",
+        "keyword": "Funcionalidade",
+        "name": "Login",
+        "description": "    Para que eu possa ter acesso as minhas tarefas\n    Sendo um usuário\n    Posso me autenticar com os meus dados previamente cadastrados",
+        "line": 3,
+        "elements": [
+            {
+                "id": "login;login-do-usuário",
+                "keyword": "Cenario",
+                "name": "Login do usuário",
+                "description": "",
+                "line": 11,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Dado ",
+                        "name": "que eu acessei a página principal",
+                        "line": 9,
+                        "match": {
+                            "location": "login_test.go:16"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 2857373500
+                        }
+                    },
+                    {
+                        "keyword": "Quando ",
+                        "name": "faço login com \"admin\" e \"admin\"",
+                        "line": 13,
+                        "match": {
+                            "location": "login_test.go:21"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 2814500700
+                        }
+                    },
+                    {
+                        "keyword": "Então ",
+                        "name": "sou autenticado com sucesso",
+                        "line": 14,
+                        "match": {
+                            "location": "login_test.go:45"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 89997400
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "login;senha-incorreta",
+                "keyword": "Cenario",
+                "name": "Senha incorreta",
+                "description": "",
+                "line": 16,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Dado ",
+                        "name": "que eu acessei a página principal",
+                        "line": 9,
+                        "match": {
+                            "location": "login_test.go:16"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 3341786800
+                        }
+                    },
+                    {
+                        "keyword": "Quando ",
+                        "name": "faço login com \"eu@papito.io\" e \"xpto123456\"",
+                        "line": 18,
+                        "match": {
+                            "location": "login_test.go:21"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 999043500
+                        }
+                    },
+                    {
+                        "keyword": "Então ",
+                        "name": "deve ser a seguinte mensagem \"Invalid credentials\"",
+                        "line": 19,
+                        "match": {
+                            "location": "login_test.go:60"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 67227400
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "login;e-mail-incorreto",
+                "keyword": "Cenario",
+                "name": "E-mail incorreto",
+                "description": "",
+                "line": 21,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Dado ",
+                        "name": "que eu acessei a página principal",
+                        "line": 9,
+                        "match": {
+                            "location": "login_test.go:16"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 2664039200
+                        }
+                    },
+                    {
+                        "keyword": "Quando ",
+                        "name": "faço login com \"eu@papito.io\" e \"xpto123456\"",
+                        "line": 23,
+                        "match": {
+                            "location": "login_test.go:21"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1032434000
+                        }
+                    },
+                    {
+                        "keyword": "Então ",
+                        "name": "deve ser a seguinte mensagem \"Invalid credentials\"",
+                        "line": 24,
+                        "match": {
+                            "location": "login_test.go:60"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 65341300
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
